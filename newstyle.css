@@ -1,0 +1,55 @@
+/* this will be your css stylesheet */
+html{
+    margin: 50px;
+}
+
+
+
+h1{
+    font-size: 1.5em;
+    color: #564581;
+    text-align: center
+}
+
+h2{
+    font-size: 1.5em;
+    font-style: oblique;
+    color: #aaa;
+    text-align: center;
+}
+
+a:link {
+    color: blue;
+}
+a:visited {
+    color: lightblue;
+}
+a:hover {
+    color: black;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border-radius: 100%;
+    margin: 50px ;
+}
+
+/* this is my body css */
+body {
+    background-image: url(background_image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x repeat-y;
+    background-size: 550px 250px;
+}
+
+h4 {
+    
+    margin-right: 20px;
+}
+ul{
+    
+}
+
+
