@@ -1,28 +1,47 @@
 /* this will be your css stylesheet */
 html{
+      font-family:  'Gravitas One', cursive;
     margin: 50px;
 }
 
+p#{
+    font-family: 'Shanti', sans-serif;
+    font-size: 2.95em; 
+}
+
+.title{
+     font-family:  'Gravitas One', cursive;
+}
 
 
 h1{
-    font-size: 1.5em;
-    color: #564581;
+  font-family:  'Gravitas One', cursive;
+    font-size: 2.95em
+    font-size: 3.95em;
+    color: rebeccapurple;
     text-align: center
 }
 
 h2{
+    font-family:  'Gravitas One', cursive;
     font-size: 1.5em;
     font-style: oblique;
-    color: #aaa;
+    color: #8EB9A8;
     text-align: center;
 }
 
+.h2{
+      font-family: 'Shanti', sans-serif;
+    font-size: 2.95em
+}
+
+
+
 a:link {
-    color: blue;
+    color: red;
 }
 a:visited {
-    color: lightblue;
+    color:red;
 }
 a:hover {
     color: black;
@@ -37,7 +56,7 @@ img {
 
 /* this is my body css */
 body {
-    background-image: url(background_image.jpg);
+    background-image: url(background_image2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: repeat-x repeat-y;
