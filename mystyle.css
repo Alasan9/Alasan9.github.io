@@ -1,0 +1,26 @@
+
+.container{
+    color: blueviolet;
+    text-align: center:
+    float:right ;
+    background-color: darkmagent;
+}
+
+
+.body{
+    margin: 3%;
+    text-align: center;
+}
+
+
+.image{
+    float: left;
+      margin: 4%;
+    border-radius: 8px;
+    color:aliceblue;
+}
+
+footer {
+    background-color: darkmagenta;
+    color: aliceblue;
+}
