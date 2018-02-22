@@ -1,9 +1,15 @@
 
 .container{
+    background-image: url(persoimage1.jpg);
     color: blueviolet;
     text-align: center:
-    float:right ;
+    float:left ;
     background-color: darkmagent;
+}
+
+
+.header-writing{
+    text-align: center;
 }
 
 
@@ -23,4 +29,26 @@
 footer {
     background-color: darkmagenta;
     color: aliceblue;
+}
+
+
+
+#navbarCollapse {
+    background: darkmagenta;
+      display: block;
+    color: white;
+}
+
+#navbarCollapse ul li a{
+    color: white;
+    padding: 25px;
+}
+
+#navbarCollapse ul li:hover{
+    background: green;
+}
+
+#navbarCollapse ul li{
+    display: inline-block;
+    list-style-type: none;
 }
