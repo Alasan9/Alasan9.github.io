@@ -2,10 +2,40 @@ body{
     background-color: lightgray;
       margin: 5px;
 }
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: ghostwhite;
+    overflow: hidden;
+}
 
-.navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    background-color: darkgray;
-    color: white;
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin:  0 170px;
+    
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: ghostwhite;
+    color: darkgrey;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
 }
 
 
@@ -15,12 +45,15 @@ body{
    margin: auto;
     width: 100%;
     border: 3px ;
-    padding: 150px;
     height: 50%;
     color: white;
     text-align: left;
     font-family: 'Patua One', cursive;
     font-size: 100px;
+    padding-left:10% ;
+    padding-top: 220px;
+ padding-bottom: 220px;
+   
 }
 
 
@@ -133,9 +166,7 @@ body{
        
     }
 
-.map{
-   margin-left: 95px;
-}
+
 
 
 
