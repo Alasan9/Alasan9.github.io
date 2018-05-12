@@ -1,0 +1,146 @@
+body{
+    background-color: lightgray;
+      margin: 5px;
+}
+
+.navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: darkgray;
+    color: white;
+}
+
+
+
+#alasan{
+    background-image: url(web2.jpg);
+   margin: auto;
+    width: 100%;
+    border: 3px ;
+    padding: 150px;
+    height: 50%;
+    color: white;
+    text-align: left;
+    font-family: 'Patua One', cursive;
+    font-size: 100px;
+}
+
+
+.alasan2{
+   
+     font-size: 20px;
+     height: 50%;
+}
+
+
+
+#bullow{
+    background-color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family:'Black Han Sans', sans-serif;
+
+}
+
+
+#portfolio{
+    margin-left: 90px;
+    margin-right: 90px
+}
+
+#navbarnav:hover .nav-item {
+    display: block;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+    border-radius: 50%;
+   float: right;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.parent-container {
+   display: flex;
+}
+.cv{
+    text-align: center;
+   
+}
+
+    .detail{
+        min-height: 150px;
+        margin-bottom: 30px;
+       background: white;
+       
+    }
+
+    .step
+           {
+        min-height: 100px;
+        margin-bottom: 15px;
+       
+    }
+
+    .maincv{
+        min-height: 1500px;
+        margin-bottom: 30px;
+        background:white;
+       
+    }
+
+.map{
+   margin-left: 95px;
+}
+
+
+
+
+
+
+
+
