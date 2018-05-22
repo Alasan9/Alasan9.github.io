@@ -89,7 +89,7 @@ body{
 #navbarnav:hover .nav-item {
     display: block;
 }
-
+/* 
 .fa {
   padding: 18px;
   font-size: 30px;
@@ -98,10 +98,8 @@ body{
   text-decoration: none;
   margin: 5px 2px;
     border-radius: 50%;
-   float: right;
-    margin-right: 80px;
-    margin-left: 80px;
 }
+
 
 .fa:hover {
     opacity: 0.6;
@@ -131,6 +129,7 @@ body{
   background: #007bb5;
   color: white;
 }
+*/
 .column {
     float: left;
     width: 33.33%;
