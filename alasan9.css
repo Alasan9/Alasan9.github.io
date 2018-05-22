@@ -89,7 +89,7 @@ body{
 #navbarnav:hover .nav-item {
     display: block;
 }
-/* 
+
 .fa {
   padding: 18px;
   font-size: 30px;
@@ -129,7 +129,8 @@ body{
   background: #007bb5;
   color: white;
 }
-*/
+
+
 .column {
     float: left;
     width: 33.33%;
