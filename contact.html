@@ -1,19 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
-       <!-- Required meta tags -->
-    <meta charset="utf-8">
-       <meta name="google-site-verification" content="L0PQuQpZdG2GeQH797dGZfZMcETKn6WvilLyLDDEnAw" />
+      <!-- Required meta tags -->
+        <meta charset="utf-8">
+<meta name="google-site-verification" content="L0PQuQpZdG2GeQH797dGZfZMcETKn6WvilLyLDDEnAw" />
+      
+          <!-- Bootstrap CSS -->
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link href="caroussel.css" rel="stylesheet">
 
-           <!-- Bootstrap CSS -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-             <link href="caroussel.css" rel="stylesheet">
-
-               <title>Alasan-Bah</title>
-            <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/446C477A-4370-264B-B950-87C9FFDE7226/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/6227EDFF9C78-059B-B462-0734-A774C644/abn/main.css"/>
+              <title>Alasan-Bah</title>
+             <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/446C477A-4370-264B-B950-87C9FFDE7226/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/6227EDFF9C78-059B-B462-0734-A774C644/abn/main.css"/>
           <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Great+Vibes|Patua+One|Roboto+Condensed" rel="stylesheet">
-       <link href="alasan9.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="alasan9.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      <script src="scripts.js"></script>
 </head>
      <!-- my body tags -->
   <body>
@@ -36,10 +38,115 @@
                    <br>
                 <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBV713YlBCSUxSHrk0hSlzrA7hI-SukP30'></script><div style='overflow:hidden;height:681px;width:80%;'><div id='gmap_canvas' style='height:681px;width:1000px; margin-left:100px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/it'>maps generator</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=d6e2786ea72f3b6ae0107a687d1ec3be69ba4004'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(39.1300756,16.073153300000058),mapTypeId: google.maps.MapTypeId.HYBRID};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(39.1300756,16.073153300000058)});infowindow = new google.maps.InfoWindow({content:'<strong>google map</strong><br>   Via Firenze, 7, <br>87032  Amantea CS <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
                   
+                  
+                  
+                  <!-- Form Started -->
+	<div class="container form-top">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+				<div class="panel panel-danger">
+                    <form name="contactform" method="post" action="contact-email.php">
+					<div class="panel-body">
+						<form id="reused_form">
+						 	<div class="form-group">
+						 		<label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+						 		<input type="text" name="name" class="form-control" placeholder="Enter Name">
+						 	</div>
+						 	<div class="form-group">
+						 		<label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+						 		<input type="email" name="email" class="form-control" placeholder="Enter Email">
+						 	</div>
+						 	<div class="form-group">
+						 		<label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+						 		<textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
+						 	</div>
+
+
+						 	<div class="form-group">
+						 		<button class="btn btn-raised btn-block btn-danger">Post →</button>
+						 	</div>
+						</form>
+						<div id="error_message" style="width:100%; height:100%; display:none; ">
+						<h4>Error</h4>
+						Sorry there was an error sending your form.
+						</div>
+						<div id="success_message" style="width:100%; height:100%; display:none; ">
+						<h2>Success! Your Message was Sent Successfully.</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Form Ended -->
+        <script>
+$(function()
+{
+    function after_form_submitted(data)
+    {
+        if(data.result == 'success')
+        {
+            $('form#reused_form').hide();
+            $('#success_message').show();
+            $('#error_message').hide();
+        }
+        else
+        {
+            $('#error_message').append('<ul></ul>');
+
+            jQuery.each(data.errors,function(key,val)
+            {
+                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+            });
+            $('#success_message').hide();
+            $('#error_message').show();
+
+            //reverse the response on the button
+            $('button[type="button"]', $form).each(function()
+            {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if(label)
+                {
+                    $btn.prop('type','submit' );
+                    $btn.text(label);
+                    $btn.prop('orig_label','');
+                }
+            });
+
+        }//else
+    }
+
+	$('#reused_form').submit(function(e)
+      {
+        e.preventDefault();
+
+        $form = $(this);
+        //show some response on the button
+        $('button[type="submit"]', $form).each(function()
+        {
+            $btn = $(this);
+            $btn.prop('type','button' );
+            $btn.prop('orig_label',$btn.text());
+            $btn.text('Sending ...');
+        });
+
+
+                    $.ajax({
+                type: "POST",
+                url: 'handler.php',
+                data: $form.serialize(),
+                success: after_form_submitted,
+                dataType: 'json'
+            });
+
+      });
+});
+</script>
+            </div>  
             </div>
       </div>
-    <br>
-    <br>
+      
  
              <!-- footer -->
         
@@ -65,5 +172,6 @@
          <hr>
        <p style="text-align: center;;">© Copyright 2018. All Rights Reserved.</p>
     </div>
+         
    </body>
 </html>

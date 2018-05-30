@@ -4,7 +4,7 @@ body{
 }
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: ghostwhite;
+    background-color:lightgray;
     overflow: hidden;
 }
 
@@ -23,14 +23,14 @@ body{
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: darkgrey;
-    color: black;
+    background-color: blue;
+    color: lightgray;
 }
 
 /* Add an active class to highlight the current page */
 .active {
-    background-color: ghostwhite;
-    color: darkgrey;
+    background-color: lightgray;
+    color: lightgray;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -47,7 +47,7 @@ body{
 }
 
 
-#alasan{
+.alasan{
     background-image: url(web2.jpg);
    margin: auto;
     width: 100%;
@@ -61,6 +61,34 @@ body{
     padding-top: 220px;
  padding-bottom: 220px;
    
+}
+
+.parallax {
+   
+    background-image: url("web4.jpg");
+
+    
+    min-height: 540px; 
+
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+   
+    background-image: url("baio.JPG");
+
+    
+    min-height: 500px; 
+
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -131,17 +159,9 @@ body{
 }
 
 
-.column {
-    float: left;
-    width: 33.33%;
-}
+   
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 
 .parent-container {
@@ -210,32 +230,7 @@ input[type=submit]:hover {
 
 
 
-<?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-/*
-Tested working with PHP5.4 and above (including PHP 7 )
 
- */
-require_once './vendor/autoload.php';
-
-use FormGuide\Handlx\FormHandler;
-
-
-$pp = new FormHandler();
-
-$validator = $pp->getValidator();
-$validator->fields(['name','email'])->areRequired()->maxLength(50);
-$validator->field('email')->isEmail();
-$validator->field('comments')->maxLength(6000);
-
-
-
-
-$pp->sendEmailTo('bahalasan@outlook.it'); // ← Your email here
-
-echo $pp->process($_POST);
 
 
 
